@@ -1,0 +1,150 @@
+:root {
+  --primary-bg-color: #e6e6e6;
+  --secondary-bg-color: white;
+  --hover-color: #bf40bf;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-bg-color);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-bg-color);
+  position: relative;
+  padding-right: 20px;
+}
+
+.top-bar-item-right{
+  display: flex;
+  margin-left: 20px;
+}
+
+.top-bar-item-left{
+  padding: 5px;
+  margin: 2px;
+  padding-left: 13px;
+  background-color: rgb(51, 102, 153);
+  color: var(--secondary-bg-color);
+  margin: 0px;
+  padding-bottom: 0px;
+  width: 26px;
+}
+
+.top-bar-item{
+  padding: 5px;
+  margin: 2px;
+  margin-left: 13px;
+
+  /* this is for circles around icons */
+  height: 23px;
+  width: 23px;
+  background-color: var(--primary-bg-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.side-bar{
+  background-color: var(--secondary-bg-color);
+  height: 100%;
+  width: 41px;
+  padding-left: 2px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.side-bar-item,.top-bar-item-search{
+  padding: 5px;
+  margin: 2px;
+  padding-left: 8px;
+  color: #a6a6a6;
+}
+
+.dashboard{
+  margin-left: 55px;
+  padding-top: 0px;
+  margin-right: 13px;
+}
+
+h1,h6 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.dashboard span{
+  color: #409fbf;
+}
+
+.side-bar-item:hover{
+  color: var(--hover-color);
+}
+.top-bar-item:hover{
+  color: var(--hover-color);
+}
+
+.counts, .blocks{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.count{
+  border-radius: 5px;
+  border-top: 2.5px solid;
+  border-top-color: #5900b3;
+  box-shadow: 1px 2px #888888;
+  padding: 10px;
+  width: 300px;
+  height: 75px;
+  margin: 5px;
+  flex-grow: 1;
+  flex-shrink: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+}
+
+.count .fas {
+  font-size: 3em;
+  color: var(--primary-bg-color);
+}
+
+.count span {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.users span{
+  color:#5900b3;
+}
+
+.visitors span{
+  color:#ff66ff;
+}
+
+.downloads span{
+  color: #00b359;
+}
+
+.purchased span{
+  color: #ff1a75;
+}
+
+.block-1,.block-2 {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 600px;
+  height: 405px;
+  flex-grow: 1;
+  background-color: var(--secondary-bg-color);
+}
+
