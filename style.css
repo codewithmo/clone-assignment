@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--primary-bg-color);
+  font-family: Verdana, sans-serif;
 }
 
 .top-bar {
@@ -66,16 +67,24 @@ body {
   color: #a6a6a6;
 }
 
+.content .secondary-text{
+  font-size: 0.8em;
+  color: #737373;
+}
+
 .dashboard{
   margin-left: 55px;
   padding-top: 0px;
   margin-right: 13px;
 }
 
-h1,h6 {
+h1 {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-bottom: 0px;
+}
+h1,h4{
+  font-weight: normal;
 }
 
 .dashboard span{
@@ -99,9 +108,9 @@ h1,h6 {
   border-radius: 5px;
   border-top: 2.5px solid;
   border-top-color: #5900b3;
-  box-shadow: 1px 2px #888888;
-  padding: 10px;
-  width: 300px;
+  box-shadow: 2px 3px #dfdfdf;
+  padding: 10px 30px;
+  width: 200px;
   height: 75px;
   margin: 5px;
   flex-grow: 1;
@@ -117,9 +126,14 @@ h1,h6 {
   color: var(--primary-bg-color);
 }
 
-.count span {
-  font-size: 2.5em;
+.count-number {
+  font-size: 1.6em;
   font-weight: bold;
+}
+.stats .count-name{
+  float: right;
+  color: #737373;
+  font-size: 0.8em;
 }
 
 .users span{
@@ -142,9 +156,8 @@ h1,h6 {
   border-radius: 5px;
   padding: 10px;
   margin: 5px;
-  width: 600px;
-  height: 405px;
+  width: 400px;
+  height: 430px;
   flex-grow: 1;
   background-color: var(--secondary-bg-color);
 }
-
